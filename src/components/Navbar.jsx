@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { logo, menu, close, cover } from "../assets";
 import { navLinks } from "../constants";
-import styles from "./style";
-
+import Hero from "./Hero";
 
 const Navbar = () => {
 
@@ -10,8 +9,8 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <nav className=" container max-w-screen-6xl rounded-xl mx-auto px-2 sm:px-6 lg:px-8  mt-10 overflow-hidden relative z-0">
-            <div className={`bg-gray-400 flex  justify-between rounded-2xl sm:items-stretch sm:justify-start h-screen  align-middle `} style={{
+        <nav className="   max-w-screen-xl max-h-80  mx-auto mt-10   relative overflow-hidden">
+            <div className={`container text-white  bg-contain  h-screen`} style={{
                 backgroundImage: `url(${cover})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
@@ -19,28 +18,58 @@ const Navbar = () => {
 
             }}
             >
-                <h1 className="uppercase text-2xl text-blue-600 mx-10 my-4 px-8 font-poppins font-semibold">
-                    nevan<span className="uppercase text-white text-2xl font-poppins font-semibold">game</span>
-                </h1>
-                {/* <img src={logo} alt="gtalogo" className="h-20 w-auto shrink-0 items-center justify-start" /> */}
-                {/* desktop view */}
-                <div className="relative flex h-16 items-center mx-4">
+                <div className=" h-20 items-center  bg-transparent flex flex-row justify-between mx-auto text-pretty font-semibold">
+
+                    <div className="flex flex-1 items-center justify-start ">
+                        <img src={logo} alt="gtalogo" className=" sm:h-14  h-20 w-auto   mx-4 mt-6 rounded" />
+
+                        <h1 className="uppercase text-2xl  font-poppins md:text-4xl  justify-between my-auto  ">
+                            nevan<span className="uppercase text-2xl  md:text-4xl font-poppins  text-blue-400">game</span>
+                        </h1>
+                    </div>
+
+
+                    {/* desktop view */}
                     <ul
-                        className={`${styles.ul} text-white md:p-0 mt-4 md:mt-0 border-0`}>
+                        className={`hidden text-white   md:flex flex-row justify-between mx-2 space-x-2 `}>
                         {
                             navLinks.map((nav, index) => (
-                                <li key={nav.id} className={`${styles.list} text-gray-100  my-4 ${active === nav.title} ? "${styles.li_active} space-x-4  mx-4  font-semibold" : " ${styles.li_notactive} hover:bg-blue-500  " 
-                                }  ${index === navLinks.length - 1 ? "mr-4" : "mr-10"}`}
+                                <li key={nav.id} className={` text-dimWhite  py-4 px-4  font-semibold ${active === nav.title} ? "  mx-4 font-semibold  " : "  hover:text-gray-700  " 
+                                }  ${index === navLinks.length - 1 ? "mr-4" : "mr-2"}`}
                                     onClick={() => setActive(nav.title)}>
                                     <a href={`#${nav.id}`}>{nav.title}</a>
                                 </li>
                             ))
                         }
                     </ul>
+
+                    {/* toggle the menu icon and close icon */}
+                    <button className=" md:hidden  rounded-lg  sticky  items-center mt-10 text-sm   z-10">
+                        <img src={toggle ? close : menu} alt="menuicon" className="h-4 w-6 object-contain"
+                            onClick={() => setToggle(!toggle)} />
+                    </button>
+                    {/* mobile view */}
+                    <div className={` ${!toggle ? "hidden" : "flex"} flex-col absolute top-6   left-1/2 mt-6 bg-gray-400  w-full overflow-hidden`}>
+                        <ul
+                            className={`md:hidden text-white `}>
+                            {
+                                navLinks.map((nav, index) => (
+                                    <li key={nav.id} className={` text-dimWhite  space-y-2 py-4   font-semibold ${active === nav.title} ? "  mx-4 font-semibold  " : "  hover:text-gray-700  " 
+                                }  ${index === navLinks.length - 1 ? "mt-0" : "mt-"}`}
+                                        onClick={() => setActive(nav.title)}>
+                                        <a href={`#${nav.id}`}>{nav.title}</a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+
+                    </div>
+                </div>
+                {/* hero section */}
+                <div className=" container absolute  bg-transparent overflow-hidden min-h-screen  max-w-3xl top-1/2  px-5 mx-5">
+                    <Hero />
                 </div>
             </div>
-            {/* toggle the menu icon and close icon */}
-
         </nav>
 
     )

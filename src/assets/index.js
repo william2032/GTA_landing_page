@@ -8,7 +8,7 @@ import picture4 from "./picture4.jpg";
 import picture5 from "./picture5.jpg";
 import close from "./close.svg";
 import menu from "./menu.svg";
-
+import star from "./star.svg"
 
 export {
     cover,
@@ -21,4 +21,5 @@ export {
     picture5,
     close,
     menu,
+    star,
 }
