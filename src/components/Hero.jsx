@@ -3,7 +3,7 @@ import { star, card } from "../assets"
 
 const Hero = () => {
     return (
-        <div className={`${styles.boxWidth} flex flex-row justify-center w-full h-[300px] md:h-[500px] lg:h-[600px]`}>
+        <div className={`${styles.boxWidth} flex flex-row justify-center w-full h-[300px] md:h-[500px] lg:h-[600px] id="About"`}>
             <div className="space-x-5 px-8">
                 <img src={card} alt="gtacard" className="h-80 w-full rounded-lg object-contain" />
                 <div className=" flex flex-row items-center space-x-8  mt-2 justify-between ">
@@ -12,10 +12,10 @@ const Hero = () => {
 
                 </div>
             </div>
-            <div className={`${styles.paragraph} space-y-4 `} >
+            <div className={`${styles.paragraph} text-left space-y-4 `} >
                 <h2 className={`${styles.heading2}`}>Grand Theft Auto V</h2>
-                <p className=" text-xl">Rockstar Games <br/>23rd Aug, 2025</p>
-                <p>In the Grand Theft Auto series, gamers control criminals and attempt to increase their standing by completing missions in various virtual cities.
+                <p className=" text-sm">Rockstar Games <br/>23rd Aug, 2025</p>
+                <p className="text-sm leading-normal  ">In the Grand Theft Auto series, gamers control criminals and attempt to increase their standing by completing missions in various virtual cities.
                     The first game of the series offered a simple birds-eye perspective of the landscape from which the gamer could view and engage in carjacking,
                     robberies, gun fights, and other forms of delinquency</p>
             </div>
