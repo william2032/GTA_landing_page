@@ -9,7 +9,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <nav className="   max-w-screen-xl max-h-80  mx-auto mt-10   relative overflow-hidden">
+        <nav className="   max-w-screen-xl max-h-80  mx-auto mt-10   relative overflow-hidden navbar">
             <div className={`container text-white  bg-contain  h-screen`} style={{
                 backgroundImage: `url(${cover})`,
                 backgroundSize: "cover",

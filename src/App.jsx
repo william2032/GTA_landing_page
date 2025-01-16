@@ -4,9 +4,8 @@ const App = () => {
     <section>
       <Navbar />
       <Screenshot />
-      <Info />
       <PLayers />
-
+      <Info />
       <Footer />
     </section>
   )
