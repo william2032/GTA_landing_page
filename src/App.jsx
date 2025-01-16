@@ -3,9 +3,10 @@ const App = () => {
   return (
     <section>
       <Navbar />
+      <Screenshot />
       <Info />
       <PLayers />
-      <Screenshot />
+      
       <Footer />
     </section>
   )

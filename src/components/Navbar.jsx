@@ -66,7 +66,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* hero section */}
-                <div className=" container absolute  bg-transparent overflow-hidden min-h-screen  max-w-3xl top-1/2  px-5 mx-5">
+                <div className=" container absolute  bg-transparent overflow-hidden h-1/2 max-w-5xl top-1/2  px-5 mx-5">
                     <Hero />
                 </div>
             </div>
