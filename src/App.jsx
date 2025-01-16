@@ -6,7 +6,7 @@ const App = () => {
       <Screenshot />
       <Info />
       <PLayers />
-      
+
       <Footer />
     </section>
   )
