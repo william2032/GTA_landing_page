@@ -16,7 +16,7 @@ const PLayers = () => {
       </p>
 
 
-      <div className="grid gap-6  md:grid-cols-3 lg:gap-12 players text-left">
+      <div className="grid gap-6  md:grid-cols-3 lg:gap-12 players text-center">
         <div className="mb-12 md:mb-0">
           <div className="mb-6 flex justify-center">
             <img
