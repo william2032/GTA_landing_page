@@ -8,7 +8,9 @@ import picture4 from "./picture4.jpg";
 import picture5 from "./picture5.jpg";
 import close from "./close.svg";
 import menu from "./menu.svg";
-import star from "./star.svg"
+import star from "./star.svg";
+import esrb from "./esrb.svg";
+import pegii_18 from "./pegii_18.jpg";
 
 export {
     cover,
@@ -22,4 +24,6 @@ export {
     close,
     menu,
     star,
+    esrb,
+    pegii_18,
 }
