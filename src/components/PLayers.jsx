@@ -3,7 +3,7 @@ import React from 'react'
 const PLayers = () => {
   return (
 
-    <div className="mx-auto text-center max-w-screen-xl md:mx-auto lg:max-w-3xl ">
+    <div className="mx-auto text-center max-w-screen-xl md:mx-auto lg:max-w-3xl text-white">
       <div className='flex flex-row justify-between'>
         <h3 className="mb-6 text-4xl font-bold text-white">Players</h3>
         <p className='text-blue-500 text-2xl'>1200 <br /><span className='text-white text-lg'>friends online</span></p>
@@ -16,7 +16,7 @@ const PLayers = () => {
       </p>
 
 
-      <div className="grid gap-6  md:grid-cols-3 lg:gap-12 players text-center">
+      <div className="grid gap-6  md:grid-cols-3 lg:gap-12 players text-center text-white" >
         <div className="mb-12 md:mb-0">
           <div className="mb-6 flex justify-center">
             <img
