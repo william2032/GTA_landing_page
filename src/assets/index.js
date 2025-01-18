@@ -11,6 +11,12 @@ import menu from "./menu.svg";
 import star from "./star.svg";
 import esrb from "./esrb.svg";
 import pegii_18 from "./pegii_18.jpg";
+import X from "./X.svg";
+import instagram from "./instagram.svg";
+import facebook from "./facebook.svg";
+
+
+
 
 export {
     cover,
@@ -26,4 +32,7 @@ export {
     star,
     esrb,
     pegii_18,
+    X,
+    facebook,
+    instagram,
 }

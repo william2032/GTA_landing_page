@@ -4,9 +4,9 @@ const Info = () => {
   return (
     // video trailer container with  game information
 
-    <div className='container max-w-screen-xl mx-auto  info text-white font-poppins'>
+    <div className='container max-w-screen-xl mx-auto  info text-white font-poppins' id='About'>
       <div className='max-w-screen-md min-h-screen'>
-        <iframe width="1200" height="500" src="https://www.youtube.com/embed/QdBZY2fkU-0"
+        <iframe width="768" height="500" src="https://www.youtube.com/embed/QdBZY2fkU-0"
           title="Grand Theft Auto VI Trailer 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>

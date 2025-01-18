@@ -3,7 +3,7 @@ import { star, card } from "../assets"
 
 const Hero = () => {
     return (
-        <div id="home" className={`${styles.boxWidth} flex flex-row justify-center w-full h-[300px] md:h-[500px] lg:h-[600px] `}>
+        <div  className={`${styles.boxWidth} flex flex-row justify-center w-full h-[300px] md:h-[500px] lg:h-[600px] `}>
             <div className="space-x-5 px-8">
                 <img src={card} alt="gtacard" className="h-80 w-full rounded-lg object-contain" />
                 <div className=" flex flex-row items-center space-x-8  mt-2 justify-between ">

@@ -4,6 +4,7 @@ import Info from "./Info";
 import PLayers from "./PLayers";
 import Screenshot from "./Screenshot";
 import Footer from "./Footer";
+import FooterSocials from "./FooterSocials";
 
 export {
     Navbar,
@@ -12,4 +13,6 @@ export {
     PLayers,
     Screenshot,
     Footer,
+    FooterSocials,
+
 }
